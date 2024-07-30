@@ -1,0 +1,81 @@
+.container__wrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if necessary */
+  justify-content: space-between; /* Evenly distributes items */
+  gap: 10px; /* Adjust the gap between items */
+  padding: 10px; /* Optional: adjust for outer spacing */
+  margin-top: -10%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  flex: 1 1 calc(25% - 20px); /* Flexible width, ensuring four items per row */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Optional: to space out content inside container */
+  margin: 10px 0; /* Adjust spacing between rows */
+}
+
+.container img {
+  width: 30%;
+  object-fit: contain;
+  max-height: 150px;
+}
+
+.container a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+.container h2 {
+  padding: 5px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.container p {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+  text-align: left;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .container {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row */
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .container {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .container__wrapper {
+    width: 90%;
+  }
+
+  .container {
+    flex: 1 1 calc(50% - 10px); /* Two items per row */
+  }
+
+  .container img {
+    width: 50%;
+  }
+}
+

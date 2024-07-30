@@ -1,0 +1,121 @@
+.container__payment {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orders__container {
+  background-color: #efeeee;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map__container {
+  width: 97%;
+}
+
+.map__container p {
+  font-weight: 100;
+}
+
+.orders__container h2 {
+  font-size: 24px;
+  padding: 20px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.order {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.order__id {
+  /* font-weight: ; */
+  /* margin-bottom: 10px; */
+}
+
+.order__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 5px 0;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .orders__container {
+    padding: 30px;
+  }
+
+  .orders__container h2 {
+    font-size: 28px;
+    padding: 30px;
+  }
+
+  .order {
+    padding: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .orders__container {
+    padding: 25px;
+  }
+
+  .orders__container h2 {
+    font-size: 26px;
+    padding: 25px;
+  }
+
+  .order {
+    padding: 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .orders__container {
+    padding: 20px;
+  }
+
+  .orders__container h2 {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .order {
+    padding: 10px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .orders__container {
+    padding: 15px;
+  }
+
+  .orders__container h2 {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  .order {
+    padding: 8px;
+  }
+
+  .map__container {
+    width: 100%;
+  }
+}

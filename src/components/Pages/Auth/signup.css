@@ -1,0 +1,105 @@
+/* login.css */
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login img {
+  margin: 30px;
+  object-fit: contain;
+  width: 100px;
+}
+.login__container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login__container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.login__container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container form div {
+  margin-bottom: 15px;
+}
+
+.login__container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login__container form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login__container form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login__container form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: #111;
+  border: 1px solid #a88734;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login__container form button:hover {
+  background-color: var(--primary-shade);
+}
+
+.login__container p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login__container p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login__container p a:hover {
+  text-decoration: underline;
+}
+
+.login__container button {
+  margin-top: 26px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e2e2e2;
+  color: #111;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login__container button:hover {
+  background-color: #969593;
+}

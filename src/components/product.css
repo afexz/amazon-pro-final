@@ -1,0 +1,128 @@
+.card__container {
+  width: 205px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 16px;
+  margin: 16px;
+  width: 218px;
+  background-color: #fff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.card__container:hover .button{
+  display: block;
+}
+
+.card__container img {
+  max-width: 100%;
+  /* border-radius: 10px; */
+  padding: 10px;
+  height: 150px;
+  object-fit: contain;
+}
+.button {
+  display: none;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.button:hover{
+  background-color: var(--primary-shade);
+}
+
+.card__container h3 {
+  font-size: 1.0rem;
+  margin: 8px 0;
+}
+
+.card__container .rating {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+/* .card__container .rating small {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  color: #777;
+} */
+
+.card__container .price {
+  font-size: 1.0rem;
+  margin: 8px 0;
+  font-weight: bold;
+} 
+
+/* .card__container .button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card__container .button:hover {
+  background-color: #0056b3;
+} */
+
+.product_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  max-width: 1450px;
+  margin: 100px auto 100px auto;
+  gap: 80px;
+  justify-items: center;
+}
+.product_wrapper div{
+  margin: 0 auto;
+}
+
+.product__flexed {
+  box-shadow: none;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  border: none;
+}
+.product__flexed h3 {
+  padding: 20px 0px;
+}
+.product__flexed .button{
+  display: block;
+  position: static;
+  width: 150px;
+  margin-right: 40px;
+}
+.product__flexed{
+  height: 21vh;
+}
+.product__flexed img {
+  max-width: 120px !important;
+  height: auto;
+}
+.descript {
+  max-width: 730px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .product__flexed {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
